@@ -2,8 +2,6 @@ const { resolve } = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-// const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const extractSass = new ExtractTextPlugin({
 	filename: '[name].[contenthash].css',
@@ -88,32 +86,8 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
 			title: 'priorartarchive',
-			// template: 'webpack/template.html',
 			template: resolve(__dirname, '../webpack/template.html'),
 		}),
-		// new SWPrecacheWebpackPlugin({
-		// 	cacheId: 'priorartarchive-cache',
-		// 	filename: 'service-worker.js', // This name is referenced in manageServiceWorker.js
-		// 	maximumFileSizeToCacheInBytes: 4194304,
-		// 	minify: true,
-		// 	navigateFallback: '/index.html',
-		// 	staticFileGlobs: [
-		// 		'static/**.*',
-		// 		'static/images/**.*',
-		// 		'static/icons/**.*',
-		// 		'static/fonts/**.*',
-		// 	],
-		// 	staticFileGlobsIgnorePatterns: [
-		// 		/\.xml$/,
-		// 		/content\//,
-		// 	],
-		// 	stripPrefix: 'static/',
-		// 	mergeStaticsConfig: true, // Merge webpacks static outputs with the globs described above.
-		// 	runtimeCaching: [{
-		// 		urlPattern: /^https:\/\/www\.priorartarchive\.org\/content\//,
-		// 		handler: 'networkOnly',
-		// 	}]
-		// }),
 	],
 	node: {
 		net: 'empty',

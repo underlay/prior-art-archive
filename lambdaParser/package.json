@@ -1,0 +1,21 @@
+{
+  "name": "lambda-parser",
+  "version": "1.0.0",
+  "description": "PDF and HTML parser for Prior Art Archive",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.69.0",
+    "crypto": "^1.0.1",
+    "dist-exiftool": "^10.53.0",
+    "https": "^1.0.0",
+    "node-exiftool": "^2.2.0",
+    "parse-head": "^1.2.0",
+    "pdfinfo": "0.0.3",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "tmp": "0.0.31"
+  }
+}

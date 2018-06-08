@@ -10,3 +10,4 @@ dist
 misc
 stats.json
 webpack-stats.json
+sftp/credentials
