@@ -8,8 +8,8 @@
     "url": "https://github.com/underlay/prior-art-archive.git"
   },
   "scripts": {
-    "build-site": "rm -rf dist && webpack --config site/webpack/webpackConfigProd.js && cp -R site/static/* dist",
-    "prod-site": "npm run build && serve ./dist -s",
+    "build-site": "rm -rf dist && webpack --config site/webpack/webpackConfigProd.js && cp -R site/static/* site/dist",
+    "prod-site": "npm run build-site && serve ./site/dist -s",
     "lint-site": "eslint site/app site/webpack site/stories site/.storybook",
     "start-site": "webpack-dev-server --env.mode=app --config site/webpack/webpackConfigDev.js",
     "consumer": "nodemon consumerTest.js",

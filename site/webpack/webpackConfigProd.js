@@ -73,22 +73,23 @@ module.exports = {
 			},
 		}),
 		extractSass,
-		new webpack.optimize.UglifyJsPlugin({
-			compressor: {
-				warnings: false,
-				screw_ie8: true,
-				unused: true,
-				dead_code: true,
-			},
-			sourceMap: true,
-		}),
+		// new webpack.optimize.UglifyJsPlugin({
+		// 	compressor: {
+		// 		warnings: false,
+		// 		screw_ie8: true,
+		// 		unused: true,
+		// 		dead_code: true,
+		// 	},
+		// 	sourceMap: true,
+		// }),
 		new webpack.optimize.CommonsChunkPlugin({
 			names: ['vendor', 'manifest'],
 		}),
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
 			title: 'priorartarchive',
-			template: 'webpack/template.html',
+			// template: 'webpack/template.html',
+			template: resolve(__dirname, '../webpack/template.html'),
 		}),
 		// new SWPrecacheWebpackPlugin({
 		// 	cacheId: 'priorartarchive-cache',
