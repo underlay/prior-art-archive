@@ -1,0 +1,26 @@
+.landing-wrapper {
+	.container {
+		text-align: center;
+		// img {
+		// 	margin-top: 120px;
+		// 	margin-bottom: 70px;
+		// 	max-width: 100%;
+		// }
+		h1 {
+			margin-top: 120px;
+			margin-bottom: 50px;
+			color: #4286f4;
+			font-weight: 800;
+		}
+	}
+}
+@media only screen and (max-width: 720px) {
+	.landing-wrapper {
+		.container {
+			img {
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
+		}
+	}
+}

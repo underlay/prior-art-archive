@@ -1,0 +1,20 @@
+.about-wrapper {
+	padding: 2em 0em;
+	h2 {
+		margin: 2em 0em 1em;
+	}
+	p {
+		margin-bottom: 2em;
+	}
+	li {
+	    font-size: 1.125rem;
+	    line-height: 1.6;
+	}
+	pre {
+		margin: 0px;
+		box-shadow: 0 0 0 black;
+		padding: 0px;
+		border-radius: 0px;
+		font-size: 1.125rem;
+	}
+}
