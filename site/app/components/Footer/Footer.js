@@ -25,6 +25,11 @@ const Footer = function() {
 			title: 'Login',
 			url: '/login',
 		},
+		{
+			id: 5,
+			title: 'Terms of Use & Privacy Policy',
+			url: '/terms',
+		},
 	];
 
 	return (

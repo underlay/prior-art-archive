@@ -61,6 +61,9 @@ class Landing extends Component {
 							{this.state.emptyQueryWarning &&
 								<div className={'warning'}>Enter keywords and then click Search</div>
 							}
+							<div className="terms-link">
+								<Link to={'/terms'}>Terms of Use & Privacy Policy</Link>
+							</div>
 						</div>
 					</div>
 				</div>
