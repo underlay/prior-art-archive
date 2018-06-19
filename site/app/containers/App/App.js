@@ -10,12 +10,14 @@ import { getLogin, getLogout } from 'actions/login';
 require('./app.scss');
 
 const About = () => <Async load={import('containers/About/About')} />;
+const Contributions = () => <Async load={import('containers/Contributions/Contributions')} />;
 const Help = () => <Async load={import('containers/Help/Help')} />;
 const History = () => <Async load={import('containers/History/History')} />;
 const Landing = () => <Async load={import('containers/Landing/Landing')} />;
 const Login = () => <Async load={import('containers/Login/Login')} />;
 const NoMatch = () => <Async load={import('containers/NoMatch/NoMatch')} />;
 const Search = () => <Async load={import('containers/Search/Search')} />;
+const Terms = () => <Async load={import('containers/Terms/Terms')} />;
 
 const propTypes = {
 	dispatch: PropTypes.func.isRequired,
@@ -70,10 +72,12 @@ class App extends Component {
 				<Switch>
 					<Route exact path="/" component={Landing} />
 					<Route exact path="/about" component={About} />
+					<Route exact path="/contributions" component={Contributions} />
 					<Route exact path="/help" component={Help} />
 					<Route exact path="/history" component={History} />
 					<Route exact path="/login" component={Login} />
 					<Route exact path="/search" component={Search} />
+					<Route exact path="/terms" component={Terms} />
 					<Route component={NoMatch} />
 				</Switch>
 			</div>

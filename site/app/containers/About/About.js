@@ -14,7 +14,7 @@ const About = function() {
 							Low quality patents waste money.  US companies spend millions of dollars year after year in litigation expenses defending against patents that shouldn’t have been issued.   The patent examination process should stop patents from being issued on old or obvious technology.  Unfortunately, just because technology is old doesn’t mean it is easy for a patent examiner to find.  Particularly in the computer field, much prior art is in the form of old manuals, documentation, web sites, etc. that have, until now, not been readily searchable.
 						</p>
 						<p>
-							Massachusetts Institute of Technology (MIT), Cisco, and the USPTO have partnered to create this first free and open archiving platform for the entire IT industry.
+							Massachusetts Institute of Technology (MIT) and Cisco have partnered to create this first free and open archiving platform for the entire IT industry.
 						</p>
 						<p>
 							Simply put: fewer bad patents will be issued if we as industry give USPTO examiners the tools they need to find old technology.
