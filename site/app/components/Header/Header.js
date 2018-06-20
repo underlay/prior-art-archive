@@ -45,6 +45,7 @@ const Header = function(props) {
 						<div className={'headerItems headerItemsRight'}>
 							{/* User avatar and menu */}
 							<Link to={'/help'} className="pt-button pt-large pt-minimal">Help</Link>
+							<Link to={'/terms'} className="pt-button pt-large pt-minimal">Terms</Link>
 							<Link to={'/about'} className="pt-button pt-large pt-minimal">About</Link>
 							{loggedIn &&
 								<Popover
