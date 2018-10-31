@@ -45,5 +45,5 @@ To deploy new Lambda code, you need to compress `index.js`, `node_modules`, and 
 The SFTP architecture is running as an ec2 instance with connection to a s3 bucket.
 
 # Architecture
-An early diagram (needs updating as of summer 2018):
+An early diagram (needs updating as of summer 2018; processing code has been migrated from Cisco servers):
 ![v1 of the Prior Art architecture](architectureOverview.png)
