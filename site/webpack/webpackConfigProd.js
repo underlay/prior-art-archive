@@ -13,7 +13,6 @@ module.exports = {
 		main: resolve(__dirname, '../app'),
 		vendor: [
 			'@blueprintjs/core',
-			'@blueprintjs/labs',
 			'react',
 			'react-code-splitting',
 			'react-dom',

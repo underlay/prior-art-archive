@@ -4,15 +4,27 @@
 		flex-grow: 1;
 		flex-shrink: 1;
 	}
-	.pt-select, .pt-icon-history {
+	.pt-select, .history-button {
 		margin-left: 1em;
 	}
-	.pt-button.pt-intent-primary {
+	.pt-button.pt-intent-primary,  {
 		// background-color: #466db1;
 		margin-left: 1em;
 		// &:hover {
 		// 	background-color: #365996;
 		// }
+	}
+	.pt-select {
+		&:after {
+			display: none;
+		}
+		.pt-icon {
+			color: #5c7080;
+			position: absolute;
+			right: 10px;
+			top: 12px;
+			pointer-events: none;
+		}
 	}
 }
 @media only screen and (max-width: 720px) {
@@ -24,7 +36,7 @@
 			margin-left: 0em;
 			margin-top: 1em;
 		}
-		.pt-select, .pt-icon-history {
+		.pt-select, .history-button {
 			margin-top: 1em;
 			vertical-align: bottom;
 		}

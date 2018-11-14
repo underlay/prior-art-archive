@@ -17,8 +17,7 @@
     "start-api": "nodemon api/api.js"
   },
   "dependencies": {
-    "@blueprintjs/core": "^1.28.0",
-    "@blueprintjs/labs": "^0.14.1",
+    "@blueprintjs/core": "^2.3.1",
     "@pubpub/editor": "^4.1.2",
     "aws-sdk": "^2.182.0",
     "babel-core": "^6.26.0",
@@ -71,7 +70,6 @@
     "prop-types": "^15.5.10",
     "query-string": "^5.0.0",
     "react": "^16.0.0",
-    "react-addons-css-transition-group": "^15.6.0",
     "react-code-splitting": "^1.2.0",
     "react-dom": "^16.0.0",
     "react-g-analytics": "^0.4.2",
@@ -79,6 +77,7 @@
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-timeago": "^3.4.3",
+    "react-transition-group": "^2.5.0",
     "redux": "^3.5.2",
     "redux-thunk": "^2.2.0",
     "request": "^2.79.0",
@@ -98,6 +97,6 @@
     "webpack-dev-server": "^2.8.1"
   },
   "engines": {
-    "node": "8.2.1"
+    "node": "10.5.0"
   }
 }

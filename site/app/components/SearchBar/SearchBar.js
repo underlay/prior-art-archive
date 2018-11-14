@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { Tooltip } from '@blueprintjs/core';
+import { Tooltip, Icon } from '@blueprintjs/core';
 
 require('./searchBar.scss');
 
@@ -18,7 +18,7 @@ const SearchBar = function(props) {
 		<div className={'search-bar-wrapper'}>
 			<div className="pt-control-group pt-large">
 				<div className="pt-input-group pt-fill pt-large">
-					<span className="pt-icon pt-icon-search" />
+					<Icon icon="search" />
 					<input
 						placeholder={'Search...'}
 						value={props.queryValue}
@@ -34,9 +34,12 @@ const SearchBar = function(props) {
 						return <option value={item} key={`operator-${item}`}>{item}</option>;
 					})}
 				</select>
+				<Icon icon="double-caret-vertical" />
 			</div>
 			<Tooltip content="History">
-				<Link to={'/history'} className="pt-button pt-icon-history pt-large" />
+				<Link to={'/history'} className="pt-button pt-large history-button">
+					<Icon icon="history" />
+				</Link>
 			</Tooltip>
 		</div>
 
